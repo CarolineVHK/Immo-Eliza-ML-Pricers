@@ -13,13 +13,13 @@
 
 ## Introduction
 
-This repository contains code and documentation for a machine learning project aimed at predicting real estate prices in Belgium. The project was undertaken for Immo Eliza, a real estate company, to assist in pricing properties accurately.
+This repository contains code and documentation for a machine learning project aimed at predicting real estate prices in Belgium. The project was undertaken for Becode as a project to learn the ML skills.
 
 ## Mission
 
 The mission of this project is to develop a robust machine learning model that can accurately predict real estate prices in Belgium. This involves several key steps:
 
-1. **Data Collection**: Scraping real estate data from relevant sources, cleaning and analyzing the data to identify patterns and trends.
+1. **Data Collection**: Scraping real estate data from relevant sources, cleaning and analyzing the data to identify patterns and trends. (see my repo for scrapping the data: https://github.com/CarolineVHK/immo-eliza-scraping-Python_Pricers - and my repo fror cleaning the data : https://github.com/CarolineVHK/immoeliza-analysis). Those repo's where done as a team.
 
 2. **Preprocessing**: Preprocessing the data to prepare it for training a machine learning model. This includes handling missing values, encoding categorical variables, and scaling numerical features.
 
