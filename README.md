@@ -1,5 +1,7 @@
 # Real Estate Price Prediction in Belgium
 
+[![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -19,7 +21,7 @@ This repository contains code and documentation for a machine learning project a
 
 The mission of this project is to develop a robust machine learning model that can accurately predict real estate prices in Belgium. This involves several key steps:
 
-1. **Data Collection**: Scraping real estate data from relevant sources, cleaning and analyzing the data to identify patterns and trends. (see my repo for scrapping the data: https://github.com/CarolineVHK/immo-eliza-scraping-Python_Pricers - and my repo fror cleaning the data : https://github.com/CarolineVHK/immoeliza-analysis). Those repo's where done as a team.
+1. **Data Collection**: Scraping real estate data from relevant sources, cleaning and analyzing the data to identify patterns and trends.
 
 2. **Preprocessing**: Preprocessing the data to prepare it for training a machine learning model. This includes handling missing values, encoding categorical variables, and scaling numerical features.
 
@@ -29,7 +31,7 @@ The mission of this project is to develop a robust machine learning model that c
 
 ## Data
 
-The data used in this project consists of real estate listings in Belgium, including various features such as location, size, number of bedrooms, and price. The dataset was collected through web scraping and contains both numerical and categorical variables.
+The data used in this project is from the previous team-projects (https://github.com/CarolineVHK/immo-eliza-scraping-Python_Pricers - and https://github.com/CarolineVHK/immoeliza-analysis), which include various features such as location, size, number of bedrooms, and price. The dataset was collected through web scraping and contains both numerical and categorical variables.
 
 ## Preprocessing
 
@@ -37,7 +39,7 @@ The preprocessing step involves cleaning and transforming the raw data into a fo
 
 ## Machine Learning Model
 
-The machine learning model used in this project is a [insert model type here], trained on the preprocessed data. The model is capable of predicting real estate prices based on the input features. Various algorithms and techniques were explored to find the best-performing model.
+The machine learning model used in this project is a Linear Regression Model, trained on the preprocessed data and this only for PropertySubType 'House'. The model is capable of predicting real estate prices based on the input features.
 
 ## Usage
 
