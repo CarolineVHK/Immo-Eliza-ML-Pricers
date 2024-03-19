@@ -41,16 +41,40 @@ The preprocessing step involves cleaning and transforming the raw data into a fo
 
 The machine learning model used in this project is a Linear Regression Model, trained on the preprocessed data and this only for PropertySubType 'House'. The model is capable of predicting real estate prices based on the input features.
 
+## Repo structure
+
+```
+.
+├── data/
+│ ├── raw_data.csv
+│ ├── preprocessed_data.csv
+│ ├── prediction_data.csv
+├── models/
+│ └── linear_regres_houses.pkl
+├── utils/
+│ ├── import_data.py
+│ ├── preprocessing_data.py
+│ ├── train.py
+│ ├── model_for_linear_regression.py
+│ ├── predict.py
+│ ├── crossvalidation.py
+├── .gitignore
+├── main.py
+├── modelscard.md
+├── README.md
+└── requirements.txt
+```
+
+
 ## Usage
 
 To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the preprocessing script to clean and transform the data.
-4. Train the machine learning model using the training data.
-5. Evaluate the model's performance using appropriate metrics.
-6. Make predictions on new data using the trained model.
+3. Run the program using `main.py`
+
+ This will execute the model, loading data from a [previous project](https://github.com/bear-revels/immo-eliza-scraping-Python_Pricers.git), cleaning it, adding population density information, and generating two CSV files (`preprocessed_data.csv` and `prediction_data.csv`) in the `data` folder.
 
 ## Contributing
 
@@ -62,4 +86,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize this README.md file to fit the specific details of your project. Good luck with your real estate price prediction project!
