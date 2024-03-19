@@ -65,6 +65,9 @@ The machine learning model used in this project is a Linear Regression Model, tr
 └── requirements.txt
 ```
 
+## ⏱️ Timeline
+
+The development of this project took 5 days for completion.
 
 ## Usage
 
@@ -82,7 +85,8 @@ Contributions to this project are welcome! If you have any suggestions, bug repo
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project was completed as part of the AI Boocamp at BeCode.org. 
+Prevouis steps in this project (scraping data and cleaning data) was completed by the team Python Pricers.
 
 ---
 
