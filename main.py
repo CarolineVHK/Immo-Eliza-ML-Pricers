@@ -1,7 +1,13 @@
-from utils.d_model import model
+from utils.model_for_linear_regression import model_LR
+from utils.preprocessing import clean_select__data
+import pandas as pd
 
-new_data = input('Which dataframe do you want me to run for you? ')
+print('One moment, the model is calculating the predictions...')
 
-predicted_prices = model(new_data)
+#launching the model:
+predicted_prices = model_LR() #---> this is an array, need to change
 
-print(predicted_prices)
+#path for csv
+data_with_predictions = "./data/prediction_data.csv"
+#save the df predicted_prices to CSV file
+pd.DataFrame(predicted_prices, columns=['Predicted_Price']).to_csv(data_with_predictions, index=False)

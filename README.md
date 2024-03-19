@@ -1,5 +1,7 @@
 # Real Estate Price Prediction in Belgium
 
+[![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -13,7 +15,7 @@
 
 ## Introduction
 
-This repository contains code and documentation for a machine learning project aimed at predicting real estate prices in Belgium. The project was undertaken for Immo Eliza, a real estate company, to assist in pricing properties accurately.
+This repository contains code and documentation for a machine learning project aimed at predicting real estate prices in Belgium. The project was undertaken for Becode as a project to learn the ML skills.
 
 ## Mission
 
@@ -29,7 +31,7 @@ The mission of this project is to develop a robust machine learning model that c
 
 ## Data
 
-The data used in this project consists of real estate listings in Belgium, including various features such as location, size, number of bedrooms, and price. The dataset was collected through web scraping and contains both numerical and categorical variables.
+The data used in this project is from the previous team-projects (https://github.com/CarolineVHK/immo-eliza-scraping-Python_Pricers - and https://github.com/CarolineVHK/immoeliza-analysis), which include various features such as location, size, number of bedrooms, and price. The dataset was collected through web scraping and contains both numerical and categorical variables.
 
 ## Preprocessing
 
@@ -37,7 +39,35 @@ The preprocessing step involves cleaning and transforming the raw data into a fo
 
 ## Machine Learning Model
 
-The machine learning model used in this project is a [insert model type here], trained on the preprocessed data. The model is capable of predicting real estate prices based on the input features. Various algorithms and techniques were explored to find the best-performing model.
+The machine learning model used in this project is a Linear Regression Model, trained on the preprocessed data and this only for PropertySubType 'House'. The model is capable of predicting real estate prices based on the input features.
+
+## Repo structure
+
+```
+.
+├── data/
+│ ├── raw_data.csv
+│ ├── preprocessed_data.csv
+│ ├── prediction_data.csv
+├── models/
+│ └── linear_regres_houses.pkl
+├── utils/
+│ ├── import_data.py
+│ ├── preprocessing_data.py
+│ ├── train.py
+│ ├── model_for_linear_regression.py
+│ ├── predict.py
+│ ├── crossvalidation.py
+├── .gitignore
+├── main.py
+├── modelscard.md
+├── README.md
+└── requirements.txt
+```
+
+## ⏱️ Timeline
+
+The development of this project took 5 days for completion.
 
 ## Usage
 
@@ -45,10 +75,9 @@ To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the preprocessing script to clean and transform the data.
-4. Train the machine learning model using the training data.
-5. Evaluate the model's performance using appropriate metrics.
-6. Make predictions on new data using the trained model.
+3. Run the program using `main.py`
+
+ This will execute the model, loading data from a [previous project](https://github.com/bear-revels/immo-eliza-scraping-Python_Pricers.git), cleaning it, adding population density information, and generating two CSV files (`preprocessed_data.csv` and `prediction_data.csv`) in the `data` folder.
 
 ## Contributing
 
@@ -56,8 +85,8 @@ Contributions to this project are welcome! If you have any suggestions, bug repo
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project was completed as part of the AI Boocamp at BeCode.org. 
+Prevouis steps in this project (scraping data and cleaning data) was completed by the team Python Pricers.
 
 ---
 
-Feel free to customize this README.md file to fit the specific details of your project. Good luck with your real estate price prediction project!
