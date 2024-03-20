@@ -15,13 +15,13 @@ def train_model():
     Returns:
     - model: Trained linear regression model.
     """
-    df = clean_select_data()
+    df = clean_select_data('./data/raw_data.csv')
     #split the data
     #1. defining X (without the target-variable) and y (=target-value):
     X = df.drop(columns=['Price','PropertySubType'], axis=1)
     y = df['Price']
     #2. create the training and test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=None)  #training with 20% of the dataset
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)  #training with 20% of the dataset
 
     #dealing with categorical data for'Province': turn categories into numbers:
     one_hot = OneHotEncoder(handle_unknown = "ignore", sparse_output=False)
