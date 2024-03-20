@@ -16,8 +16,9 @@ def model_LR():
     model = joblib.load('./models/lin_regres_houses.pkl')
 
     y_pred= model.predict(df_conc_test)
-    mse = mean_squared_error(y_test, y_pred)
-    print("Mean Sqaured Error for this model is: ", mse)
-    print("Score = ", model.score(df_conc_test, y_test))
+    # mse = mean_squared_error(y_test, y_pred)
+    # print("Mean Sqaured Error for this model is: ", mse)
+    print("Score from train-set = ", model.score(df_conc_train, y_train))
+    print("Score from test-set = ", model.score(df_conc_test, y_test))
 
     return y_pred

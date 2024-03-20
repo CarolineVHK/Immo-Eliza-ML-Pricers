@@ -1,4 +1,4 @@
-from .preprocessing import clean_select__data
+from .preprocessing import clean_select_data
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 
@@ -15,7 +15,7 @@ def train_model():
     Returns:
     - model: Trained linear regression model.
     """
-    df = clean_select__data()
+    df = clean_select_data()
     #split the data
     #1. defining X (without the target-variable) and y (=target-value):
     X = df.drop(columns=['Price','PropertySubType'], axis=1)

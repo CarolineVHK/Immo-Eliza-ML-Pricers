@@ -1,8 +1,9 @@
 import pandas as pd
+import numpy as np
 from .import_data import data_import
 
 
-def clean_select__data():
+def clean_select_data():
     """
     Preprocess the data.
 
@@ -22,6 +23,8 @@ def clean_select__data():
     df.dropna(subset=['Price', 'LivingArea'], inplace=True)
     #removing index from df because otherwise it gives NaN-values becaus after cleaning, indexes are non exsistent
     df.reset_index(drop=True, inplace=True) 
+    #log10 from np on price: reduce effect from outliers
+    df['Price'] = np.log10(df['Price'])
 
     #saving the new dataFrame:
     #path for the CSV file

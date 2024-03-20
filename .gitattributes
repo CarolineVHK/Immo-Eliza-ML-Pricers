@@ -1,0 +1,4 @@
+*./usr/local/bin/python3[[:space:]]/Users/caro/Documents/Projects/Immo-eliza-ml/main.py filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
+lin_regres_houses.pkl filter=lfs diff=lfs merge=lfs -text
+models/lin_regres_houses.pkl filter=lfs diff=lfs merge=lfs -text

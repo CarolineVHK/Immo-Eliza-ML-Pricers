@@ -1,8 +1,8 @@
 from sklearn.model_selection import cross_val_score, KFold
 import numpy as np
 
-from .model_for_linear_regression import model_LR
-from .train import train_model
+from utils.model_for_linear_regression import model_LR
+from utils.train import train_model
 
 df_conc_test, df_conc_train,y_train, y_test = train_model()
 
