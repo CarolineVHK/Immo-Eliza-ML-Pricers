@@ -9,6 +9,7 @@
 - [Data](#data)
 - [Preprocessing](#preprocessing)
 - [Machine Learning Model](#machine-learning-model)
+- [Repo Structure](#Repo Structure)
 - [Timeline](#Timeline)
 - [Usage](#usage)
 - [Contributing](#contributing)
