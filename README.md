@@ -9,6 +9,7 @@
 - [Data](#data)
 - [Preprocessing](#preprocessing)
 - [Machine Learning Model](#machine-learning-model)
+- [Timeline](#Timeline)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -78,7 +79,7 @@ To use the code in this repository, follow these steps:
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Run the program using `predict.py`
 
- This will execute the model, loading data from a [previous project](https://github.com/bear-revels/immo-eliza-scraping-Python_Pricers.git), cleaning it, adding population density information, and generating two CSV files (`preprocessed_data.csv` and `prediction_data.csv`) in the `data` folder.
+ This will execute the model, loading data `new_data.csv`, cleaning it, handling missing values and preproces the data for the model. When the model is finished a new csv-file called `predictions_new_data.csv` will be created and automatically open for you.
 
 ## Contributing
 
@@ -86,8 +87,8 @@ Contributions to this project are welcome! If you have any suggestions, bug repo
 
 ## License
 
-This project was completed as part of the AI Boocamp at BeCode.org. 
-Prevouis steps in this project (scraping data and cleaning data) was completed by the team Python Pricers.
+This project was completed as part of the AI Bootcamp at BeCode.org. 
+Previous steps in this project (scraping data and cleaning data) was completed by the team Python Pricers.
 
 ---
 
