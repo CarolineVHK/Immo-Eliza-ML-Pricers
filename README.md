@@ -59,10 +59,11 @@ The machine learning model used in this project is a Linear Regression Model, tr
 │ ├── predict.py
 │ ├── crossvalidation.py
 ├── .gitignore
-├── main.py
+├── predict.py
 ├── modelscard.md
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── training_results.py
 ```
 
 ## ⏱️ Timeline
@@ -75,7 +76,7 @@ To use the code in this repository, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the program using `main.py`
+3. Run the program using `predict.py`
 
  This will execute the model, loading data from a [previous project](https://github.com/bear-revels/immo-eliza-scraping-Python_Pricers.git), cleaning it, adding population density information, and generating two CSV files (`preprocessed_data.csv` and `prediction_data.csv`) in the `data` folder.
 
